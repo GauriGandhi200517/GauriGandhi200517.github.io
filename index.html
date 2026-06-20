@@ -1,170 +1,212 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gauri Gandhi - Resume</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Gauri Gandhi | AI Engineer Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
 </head>
+
 <body>
-    <div class="container">
-        <!-- Header Section -->
-        <header class="header">
-            <div class="profile-section">
-                <img src="logo.jpeg" alt="Gauri Gandhi" class="profile-photo">
-                <div class="profile-info">
-                    <h1 class="name">Gauri Gandhi</h1>
-                    <p class="course">Bachelor of Technology in Artificial Intelligence and Machine Learning</p>
-                    <p class="institution">Dr. Akhilesh Das Gupta Institute of Professional Studies, Delhi</p>
-                </div>
-            </div>
-            
-            <div class="contact-section">
-                <div class="contact-info">
-                    <p><strong>📞 Phone:</strong> +91-9868000890</p>
-                    <p><strong>📧 Email:</strong> <a href="mailto:gaurigandhi1685@gmail.com">gaurigandhi1685@gmail.com</a></p>
-                    <p><strong>🔗 GitHub:</strong> <a href="https://github.com/GauriGandhi200517" target="_blank">GitHub Profile</a></p>
-                    <p><strong>💼 LinkedIn:</strong> <a href="https://www.linkedin.com/in/gauri-gandhi-950259318/" target="_blank">LinkedIn Profile</a></p>
-                    <p><strong>🎓 Roll No:</strong> 10115611623</p>
-                </div>
-                <a href="Resume.pdf" download class="download-btn">📄 Download Resume</a>
-            </div>
-        </header>
 
-        <!-- Education Section -->
-        <section class="section">
-            <h2>Education</h2>
-            <div class="content-item">
-                <div class="item-header">
-                    <h3>Bachelor of Technology in Artificial Intelligence and Machine Learning</h3>
-                    <span class="date">2023 – 2027</span>
-                </div>
-                <p class="institution-name">Dr. Akhilesh Das Gupta Institute of Professional Studies (GGSIPU)</p>
-                <p class="location">New Delhi</p>
-                <p class="achievement"><strong>CGPA: 9.64 (Current)</strong></p>
-            </div>
-        </section>
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <img src="logo.jpeg" alt="Gauri Gandhi" class="profile-img">
 
-        <!-- Personal Projects Section -->
-        <section class="section">
-            <h2>Personal Projects</h2>
-            
-            <div class="content-item">
-                <div class="item-header">
-                    <h3>VeriNews – Fake News Detection Web App</h3>
-                    <span class="date">Jan 2024 – May 2024</span>
-                </div>
-                <p class="description">AI-powered web application detecting fake news using NLP and LLMs like RoBERTa and Gemini, with real-time aggregation via NewsData.io API.</p>
-                <ul>
-                    <li>Developed a full-stack Flask-based application aggregating news from 50+ countries and 11 categories using NewsData.io API.</li>
-                    <li>Implemented dual-stage credibility scoring engine using RoBERTa and Gemini AI with reasoning and recommendations.</li>
-                    <li>Built modular fault-tolerant design with multilingual filtering, API fallback, and responsive UI.</li>
-                </ul>
-            </div>
+        <h1>Gauri Gandhi</h1>
 
-            <div class="content-item">
-                <div class="item-header">
-                    <h3>AI-Driven Supply Chain Disruption Predictor and Inventory Optimization System</h3>
-                    <span class="date">Dec 2024 – Feb 2025</span>
-                </div>
-                <p class="description">Predictive modeling and real-time analysis for supply chain risks and inventory optimization using GPT, LLaMA, Slack, and Google Sheets integration.</p>
-                <ul>
-                    <li>Built a disruption prediction engine using NLP and sentiment analysis from global sources.</li>
-                    <li>Developed inventory optimization models with ERP integration for dynamic stock adjustments.</li>
-                    <li>Enabled real-time alerts through Slack and Google Sheets APIs.</li>
-                    <li>Utilized Python, Hugging Face Transformers, Scikit-learn, TensorFlow, PyTorch, Pandas, NumPy, Matplotlib, Seaborn.</li>
-                </ul>
-            </div>
-        </section>
+        <h2>AI & ML Engineer</h2>
 
-        <!-- Experience Section -->
-        <section class="section">
-            <h2>Experience</h2>
-            
-            <div class="content-item">
-                <div class="item-header">
-                    <h3>Infosys Springboard 5.0 – Batch 3</h3>
-                    <span class="date">Dec 2024 – Feb 2025</span>
-                </div>
-                <p class="role">AI Driven Supply Chain | Online</p>
-                <ul>
-                    <li>Developed supply chain risk prediction and optimization system using GPT, LLaMA, Slack, and Google Sheets.</li>
-                    <li>Gained hands-on expertise in Python, NLP (Hugging Face Transformers, Scikit-learn), ML frameworks (TensorFlow, PyTorch), and APIs.</li>
-                </ul>
+        <p class="tagline">
+            Generative AI • LLMs • RAG • NLP • Machine Learning
+        </p>
+
+        <div class="buttons">
+            <a href="Resume.pdf" target="_blank" class="btn">
+                Download Resume
+            </a>
+
+            <a href="https://github.com/GauriGandhi200517" target="_blank" class="btn">
+                GitHub
+            </a>
+
+            <a href="https://linkedin.com/in/gauri-gandhi-950259318" target="_blank" class="btn">
+                LinkedIn
+            </a>
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+            I am a B.Tech student specializing in Artificial Intelligence and Machine Learning with a CGPA of 9.64.
+            My interests include Generative AI, Large Language Models (LLMs), Retrieval-Augmented Generation (RAG),
+            Natural Language Processing, and Full-Stack AI Development.
+        </p>
+
+        <p>
+            I enjoy building intelligent applications that solve real-world problems through AI, automation,
+            and modern software engineering practices.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+
+        <h2>Technical Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill-box">
+                <h3>Programming</h3>
+                <p>Python, C/C++, JavaScript, SQL, HTML, CSS</p>
             </div>
 
-            <div class="content-item">
-                <div class="item-header">
-                    <h3>Norx Cloud – Summer Training</h3>
-                    <span class="date">Jun 2025 – Jul 2025</span>
-                </div>
-                <p class="role">Trainee – Odoo ERP | Online</p>
-                <ul>
-                    <li>Completed 6-week training on ERP systems and cloud solutions, focusing on Odoo ERP modules (sales, inventory, accounting).</li>
-                    <li>Contributed to ERP customization and workflow automation with real-world implementation exposure.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Technical Skills Section -->
-        <section class="section">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>Languages</h4>
-                    <p>Python, C/C++, JavaScript, HTML/CSS</p>
-                </div>
-                <div class="skill-category">
-                    <h4>Frameworks & Libraries</h4>
-                    <p>TensorFlow, PyTorch, Hugging Face Transformers, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn</p>
-                </div>
-                <div class="skill-category">
-                    <h4>Web & Dev Tools</h4>
-                    <p>ReactJS, Node.js, Git, GitHub, VS Code</p>
-                </div>
-                <div class="skill-category">
-                    <h4>ERP/CRM Tools</h4>
-                    <p>Odoo ERP, CRM Systems</p>
-                </div>
-                <div class="skill-category">
-                    <h4>Areas of Interest</h4>
-                    <p>Artificial Intelligence, Machine Learning, NLP, Deep Learning, Large Language Models (LLMs)</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Positions of Responsibility Section -->
-        <section class="section">
-            <h2>Positions of Responsibility</h2>
-            
-            <div class="content-item">
-                <div class="item-header">
-                    <h3>Co-Lead (Content) – Kritrimdhi Society</h3>
-                    <span class="date">Jan 2024 – Present</span>
-                </div>
-                <ul>
-                    <li>Wrote and published content on AI and emerging technologies for Kritrimdhi Society's official platforms.</li>
-                    <li>Contributed to engaging outreach materials and community discussions around AI innovation.</li>
-                </ul>
+            <div class="skill-box">
+                <h3>AI / ML</h3>
+                <p>Machine Learning, Deep Learning, NLP, LLMs, RAG, TensorFlow, PyTorch, Hugging Face</p>
             </div>
 
-            <div class="content-item">
-                <div class="item-header">
-                    <h3>Member – NSS Management Team</h3>
-                    <span class="date">Oct 2023 – Present</span>
-                </div>
-                <ul>
-                    <li>Assisted in event management, student onboarding, and backend coordination.</li>
-                    <li>Supported 50+ students in open-source contributions and technical workshops.</li>
-                </ul>
+            <div class="skill-box">
+                <h3>Frameworks</h3>
+                <p>Flask, FastAPI, Streamlit, LangChain, ReactJS, Node.js</p>
             </div>
-        </section>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <p>&copy; 2025 Gauri Gandhi. All rights reserved.</p>
-        </footer>
-    </div>
+            <div class="skill-box">
+                <h3>Databases & Tools</h3>
+                <p>MySQL, FAISS, Pinecone, Git, GitHub, VS Code</p>
+            </div>
+
+            <div class="skill-box">
+                <h3>ERP & APIs</h3>
+                <p>Odoo ERP, CRM Systems, Slack API, Google Sheets API, NewsAPI</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+
+        <h2>Experience</h2>
+
+        <div class="card">
+            <h3>Norx Cloud</h3>
+            <h4>Odoo ERP Trainee</h4>
+
+            <ul>
+                <li>Worked on CRM, Sales, Inventory and Accounting modules.</li>
+                <li>Website Development and ERP customization.</li>
+                <li>Workflow automation and business process optimization.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Infosys Springboard 5.0</h3>
+            <h4>AI Project Developer</h4>
+
+            <ul>
+                <li>Developed AI-driven Supply Chain Predictor.</li>
+                <li>Worked with GPT, LLaMA and NLP pipelines.</li>
+                <li>Built AI integrations and automation workflows.</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+
+        <h2>Featured Projects</h2>
+
+        <div class="project-card">
+            <h3>VeriNews – Fake News Detection Platform</h3>
+
+            <p>
+                AI-powered fake news detection platform using RoBERTa,
+                Gemini AI and NewsData API with real-time news aggregation.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>AI-Driven Supply Chain Predictor</h3>
+
+            <p>
+                Predictive analytics platform utilizing GPT, LLaMA,
+                NLP and automated reporting systems.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>LLM RAG Observability Platform</h3>
+
+            <p>
+                Monitoring solution for Retrieval-Augmented Generation
+                systems to track hallucinations and retrieval quality.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>AI Research Notes Assistant</h3>
+
+            <p>
+                RAG-based assistant featuring semantic search,
+                contextual question answering and document chat.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- LEADERSHIP -->
+    <section id="leadership">
+
+        <h2>Leadership & Responsibilities</h2>
+
+        <div class="card">
+            <h3>Co-Lead (Content)</h3>
+            <p>Kritrimdhi Society</p>
+        </div>
+
+        <div class="card">
+            <h3>NSS Management Team</h3>
+            <p>Event Management & Technical Coordination</p>
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>Email: gaurigandhi1685@gmail.com</p>
+
+        <p>Phone: +91-9868000890</p>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/GauriGandhi200517" target="_blank">
+                github.com/GauriGandhi200517
+            </a>
+        </p>
+
+        <p>
+            LinkedIn:
+            <a href="https://linkedin.com/in/gauri-gandhi-950259318" target="_blank">
+                linkedin.com/in/gauri-gandhi-950259318
+            </a>
+        </p>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Gauri Gandhi | AI Engineer Portfolio</p>
+    </footer>
+
 </body>
 </html>
+```
