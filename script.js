@@ -1,35 +1,24 @@
 // Scroll reveal
 const reveals = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver((entries) => {
+const io = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
     if (entry.isIntersecting) {
-      setTimeout(() => entry.target.classList.add('visible'), i * 80);
-      observer.unobserve(entry.target);
+      setTimeout(() => entry.target.classList.add('visible'), i * 90);
+      io.unobserve(entry.target);
     }
   });
-}, { threshold: 0.12 });
-reveals.forEach(el => observer.observe(el));
+}, { threshold: 0.1 });
+reveals.forEach(el => io.observe(el));
 
-// Active nav highlight
+// Active nav on scroll
 const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('.nav-links a');
+const links = document.querySelectorAll('.nav-links a');
 window.addEventListener('scroll', () => {
-  const scrollY = window.scrollY + 120;
-  sections.forEach(section => {
-    if (scrollY >= section.offsetTop && scrollY < section.offsetTop + section.offsetHeight) {
-      navLinks.forEach(a => {
-        a.classList.toggle('active', a.getAttribute('href') === '#' + section.id);
-      });
-    }
+  const y = window.scrollY + 130;
+  sections.forEach(s => {
+    const inView = y >= s.offsetTop && y < s.offsetTop + s.offsetHeight;
+    links.forEach(a => {
+      if (a.getAttribute('href') === '#' + s.id) a.classList.toggle('active', inView);
+    });
   });
 }, { passive: true });
-
-// Typing cursor blink effect on hero name accent (subtle)
-const accent = document.querySelector('.hero-name-accent');
-if (accent) {
-  let show = true;
-  setInterval(() => {
-    accent.style.borderRight = show ? '3px solid #A855F7' : '3px solid transparent';
-    show = !show;
-  }, 600);
-}
