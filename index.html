@@ -1,144 +1,274 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gauri Gandhi | AI Engineer Portfolio</title>
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gauri Gandhi | AI Engineer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Gauri Gandhi</div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<header class="hero">
-    <img src="logo.jpeg" alt="Gauri Gandhi" class="profile-img">
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <img src="logo.jpeg" alt="Gauri Gandhi" class="profile-img">
+            <h1>Gauri Gandhi</h1>
+            <h2 class="subtitle">AI Engineer | Generative AI Developer</h2>
+            <p class="tagline">
+                Building intelligent solutions with Generative AI, LLMs, and Machine Learning
+            </p>
+            <div class="cta-buttons">
+                <a href="Resume.pdf" class="btn btn-primary" target="_blank">Download Resume</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/GauriGandhi200517" target="_blank" class="social-icon">GitHub</a>
+                <a href="https://linkedin.com/in/gauri-gandhi-950259318" target="_blank" class="social-icon">LinkedIn</a>
+                <a href="mailto:gaurigandhi1685@gmail.com" class="social-icon">Email</a>
+            </div>
+        </div>
+    </header>
 
-```
-<h1>Gauri Gandhi</h1>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p class="about-text">
+                I am a B.Tech student in Artificial Intelligence & Machine Learning with a CGPA of 9.64. 
+                With a passion for cutting-edge AI technologies, I specialize in developing intelligent solutions 
+                using Generative AI, Large Language Models, and advanced NLP techniques. I have hands-on experience 
+                in building production-ready AI applications, from concept to deployment.
+            </p>
+            <div class="about-highlights">
+                <div class="highlight">
+                    <h3>🎓 Education</h3>
+                    <p>B.Tech in AI & ML | CGPA: 9.64</p>
+                </div>
+                <div class="highlight">
+                    <h3>💼 Focus</h3>
+                    <p>Generative AI & LLM Applications</p>
+                </div>
+                <div class="highlight">
+                    <h3>🚀 Approach</h3>
+                    <p>Full-Stack AI Development</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<h2>AI Engineer | Generative AI Developer</h2>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                        <li>HTML/CSS</li>
+                    </ul>
+                </div>
 
-<p class="tagline">
-    Generative AI • LLMs • RAG • NLP • Machine Learning
-</p>
+                <div class="skill-card">
+                    <h3>AI & Machine Learning</h3>
+                    <ul>
+                        <li>TensorFlow</li>
+                        <li>PyTorch</li>
+                        <li>NLP & LLMs</li>
+                        <li>RAG (Retrieval-Augmented Generation)</li>
+                        <li>Hugging Face</li>
+                        <li>Scikit-Learn</li>
+                    </ul>
+                </div>
 
-<div class="buttons">
-    <a href="Resume.pdf" class="btn" target="_blank">Resume</a>
-    <a href="mailto:gaurigandhi1685@gmail.com" class="btn hire-btn">Hire Me</a>
-    <a href="https://github.com/GauriGandhi200517" class="btn" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/in/gauri-gandhi-950259318" class="btn" target="_blank">LinkedIn</a>
-</div>
-```
+                <div class="skill-card">
+                    <h3>Frameworks & Libraries</h3>
+                    <ul>
+                        <li>Flask</li>
+                        <li>FastAPI</li>
+                        <li>Streamlit</li>
+                        <li>LangChain</li>
+                        <li>ReactJS</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
 
-</header>
+                <div class="skill-card">
+                    <h3>Tools & Databases</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>MySQL</li>
+                        <li>Pinecone</li>
+                        <li>FAISS</li>
+                        <li>VS Code</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="about">
-    <h2>About Me</h2>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>VeriNews</h3>
+                        <span class="project-tag">AI</span>
+                    </div>
+                    <p class="project-description">
+                        AI-powered fake news detection platform using RoBERTa, Gemini AI and NewsData API.
+                        Achieves high accuracy in identifying misinformation across multiple sources.
+                    </p>
+                    <div class="project-tech">
+                        <span>RoBERTa</span>
+                        <span>Gemini AI</span>
+                        <span>NLP</span>
+                    </div>
+                </div>
 
-```
-<p>
-    I am a B.Tech student in Artificial Intelligence & Machine Learning with a CGPA of 9.64.
-    My expertise includes Generative AI, Large Language Models (LLMs),
-    Retrieval-Augmented Generation (RAG), Natural Language Processing,
-    Deep Learning and Full-Stack AI Development.
-</p>
-```
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>AI-Driven Supply Chain Predictor</h3>
+                        <span class="project-tag">Analytics</span>
+                    </div>
+                    <p class="project-description">
+                        Predictive analytics platform using GPT, LLaMA and sentiment analysis.
+                        Optimizes supply chain operations with real-time insights.
+                    </p>
+                    <div class="project-tech">
+                        <span>GPT</span>
+                        <span>LLaMA</span>
+                        <span>Sentiment Analysis</span>
+                    </div>
+                </div>
 
-</section>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>LLM RAG Observability Platform</h3>
+                        <span class="project-tag">Monitoring</span>
+                    </div>
+                    <p class="project-description">
+                        Monitoring solution for hallucination tracking and retrieval quality analysis.
+                        Ensures reliability and accuracy of RAG systems in production.
+                    </p>
+                    <div class="project-tech">
+                        <span>RAG</span>
+                        <span>LLM Monitoring</span>
+                        <span>Analytics</span>
+                    </div>
+                </div>
 
-<section id="skills">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>AI Research Notes Assistant</h3>
+                        <span class="project-tag">RAG</span>
+                    </div>
+                    <p class="project-description">
+                        Document-aware RAG assistant with semantic search and summarization.
+                        Helps researchers manage and query large document collections efficiently.
+                    </p>
+                    <div class="project-tech">
+                        <span>RAG</span>
+                        <span>Semantic Search</span>
+                        <span>Summarization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-```
-<h2>Technical Skills</h2>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3>Odoo ERP Trainee</h3>
+                        <span class="company">Norx Cloud</span>
+                    </div>
+                    <p class="experience-description">
+                        Worked on enterprise resource planning solutions, gaining hands-on experience 
+                        with ERP systems and business process automation.
+                    </p>
+                    <p class="experience-duration">Internship Period</p>
+                </div>
 
-<div class="skills-container">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3>AI Project Developer</h3>
+                        <span class="company">Infosys Springboard 5.0</span>
+                    </div>
+                    <p class="experience-description">
+                        Developed AI-driven solutions and participated in structured learning program 
+                        focused on industry-relevant AI and machine learning applications.
+                    </p>
+                    <p class="experience-duration">Training & Development</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="skill-box">
-        <h3>Programming</h3>
-        <p>Python, C++, JavaScript, SQL, HTML, CSS</p>
-    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Let's Connect</h2>
+            <p class="contact-intro">
+                I'm always interested in hearing about new projects and opportunities. 
+                Feel free to reach out!
+            </p>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <h3>📧 Email</h3>
+                    <a href="mailto:gaurigandhi1685@gmail.com">gaurigandhi1685@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <h3>📱 Phone</h3>
+                    <p>+91-9868000890</p>
+                </div>
+                <div class="contact-item">
+                    <h3>🔗 Social</h3>
+                    <div class="social-links-contact">
+                        <a href="https://github.com/GauriGandhi200517" target="_blank">GitHub</a>
+                        <a href="https://linkedin.com/in/gauri-gandhi-950259318" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="skill-box">
-        <h3>AI & ML</h3>
-        <p>TensorFlow, PyTorch, NLP, LLMs, RAG, Hugging Face, Scikit-Learn</p>
-    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Gauri Gandhi | AI Engineer Portfolio</p>
+            <p>Designed & Built with ❤️</p>
+        </div>
+    </footer>
 
-    <div class="skill-box">
-        <h3>Frameworks</h3>
-        <p>Flask, FastAPI, Streamlit, LangChain, ReactJS, Node.js</p>
-    </div>
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">↑</button>
 
-    <div class="skill-box">
-        <h3>Tools</h3>
-        <p>Git, GitHub, MySQL, Pinecone, FAISS, VS Code</p>
-    </div>
-
-</div>
-```
-
-</section>
-
-<section id="projects">
-
-```
-<h2>Featured Projects</h2>
-
-<div class="project-card">
-    <h3>VeriNews</h3>
-    <p>AI-powered fake news detection platform using RoBERTa, Gemini AI and NewsData API.</p>
-</div>
-
-<div class="project-card">
-    <h3>AI-Driven Supply Chain Predictor</h3>
-    <p>Predictive analytics platform using GPT, LLaMA and sentiment analysis.</p>
-</div>
-
-<div class="project-card">
-    <h3>LLM RAG Observability Platform</h3>
-    <p>Monitoring solution for hallucination tracking and retrieval quality analysis.</p>
-</div>
-
-<div class="project-card">
-    <h3>AI Research Notes Assistant</h3>
-    <p>Document-aware RAG assistant with semantic search and summarization.</p>
-</div>
-```
-
-</section>
-
-<section id="experience">
-
-```
-<h2>Experience</h2>
-
-<div class="card">
-    <h3>Norx Cloud</h3>
-    <p>Odoo ERP Trainee</p>
-</div>
-
-<div class="card">
-    <h3>Infosys Springboard 5.0</h3>
-    <p>AI Project Developer</p>
-</div>
-```
-
-</section>
-
-<section id="contact">
-
-```
-<h2>Let's Connect</h2>
-
-<p>📧 gaurigandhi1685@gmail.com</p>
-<p>📱 +91-9868000890</p>
-```
-
-</section>
-
-<footer>
-    <p>© 2026 Gauri Gandhi | AI Engineer Portfolio</p>
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
