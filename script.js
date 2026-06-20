@@ -1,46 +1,35 @@
-// ============ Scroll reveal ============
-document.addEventListener('DOMContentLoaded', () => {
-  // Tag revealable elements
-  const revealTargets = document.querySelectorAll(
-    '.about-grid, .skill-card, .project-card, .timeline-item, .leadership-card, .contact-card, .section-head'
-  );
-  revealTargets.forEach(el => el.setAttribute('data-reveal', ''));
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-
-  revealTargets.forEach(el => observer.observe(el));
-
-  // ============ Active nav link on scroll ============
-  const sections = document.querySelectorAll('main .section');
-  const navLinks = document.querySelectorAll('.nav-links a');
-
-  const navObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const id = entry.target.getAttribute('id');
-        navLinks.forEach(link => {
-          link.style.color = link.getAttribute('href') === `#${id}` ? 'var(--paper)' : '';
-        });
-      }
-    });
-  }, { threshold: 0.4 });
-
-  sections.forEach(s => navObserver.observe(s));
-
-  // ============ Navbar background on scroll ============
-  const nav = document.getElementById('navbar');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 20) {
-      nav.style.borderBottomColor = 'var(--line)';
-    } else {
-      nav.style.borderBottomColor = '';
+// Scroll reveal
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('visible'), i * 80);
+      observer.unobserve(entry.target);
     }
   });
-});
+}, { threshold: 0.12 });
+reveals.forEach(el => observer.observe(el));
+
+// Active nav highlight
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY + 120;
+  sections.forEach(section => {
+    if (scrollY >= section.offsetTop && scrollY < section.offsetTop + section.offsetHeight) {
+      navLinks.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + section.id);
+      });
+    }
+  });
+}, { passive: true });
+
+// Typing cursor blink effect on hero name accent (subtle)
+const accent = document.querySelector('.hero-name-accent');
+if (accent) {
+  let show = true;
+  setInterval(() => {
+    accent.style.borderRight = show ? '3px solid #A855F7' : '3px solid transparent';
+    show = !show;
+  }, 600);
+}
